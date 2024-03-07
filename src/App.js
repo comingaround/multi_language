@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./app.css";
+import Second from "./test";
 
 const App = () => {
   const { t, i18n } = useTranslation();
@@ -20,6 +21,7 @@ const App = () => {
       <h1>
         {t("hog eats potatoes")}
       </h1>
+      <Second />
       <div className="lang_section">
         <h3>{getCurrentLanguageName()}</h3>
         <div className="lang_buttons">
